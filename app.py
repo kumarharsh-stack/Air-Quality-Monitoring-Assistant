@@ -1,16 +1,4 @@
-"""
-Air Quality Assistant - Main Flask Application
-=================================================
-This is the entry point. It wires together:
-  - geocoding a city name into lat/lon
-  - fetching live air quality data
-  - saving readings to SQLite
-  - serving history for the chart
-  - a rule-based (optionally LLM-backed) assistant
-  - an optional ML prediction endpoint
 
-Run with:  python app.py
-"""
 
 from flask import Flask, render_template, request, jsonify
 import os
